@@ -6,6 +6,7 @@ on:
 name: Build and Deploy a Container
 env:
   PROJECT_ID: ${{ secrets.GCP_PROJECT }}
+  CREDS: ${{ secrets.GCP_SA_KEY}}
   API_SERVICE_VERSION: v0.1
   DEMUCS_IMAGE: gcr.io/${{secrets.GCP_PROJECT}}/demucs-trainer:v0.1
   REGION: us-east1
